@@ -67,7 +67,7 @@ let gameStarted = false,
     }
 
     function getCardString(card){
-        return card.value + 'of' + card.suit;
+        return card.value + ' of ' + card.suit;
     }
 
     function getNextCard() {
@@ -79,7 +79,7 @@ let gameStarted = false,
             textArea.innerText = 'Welcome to Blackjack!';
             return;
         }
-        console.log("hola")
+        
         for ( var i=0; i<deck.length; i++) {
             textArea.innerText += '\n' + getCardString(deck[i]);
         }
